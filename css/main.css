@@ -1,0 +1,287 @@
+:root{
+    --font400: 400;
+    --font500: 500;
+    --font700: 700;
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/roboto-v30-latin-500.eot"); /* IE9 Compat Modes */
+    src: 
+    url("../fonts/roboto-v30-latin-500.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/roboto-v30-latin-500.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/roboto-v30-latin-500.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/roboto-v30-latin-500.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/roboto-v30-latin-500.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/roboto-v30-latin-700.eot"); /* IE9 Compat Modes */
+    src:
+    url("../fonts/roboto-v30-latin-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/roboto-v30-latin-700.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/roboto-v30-latin-700.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/roboto-v30-latin-700.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Roboto", "Arial" , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+.container {
+    width: 1340px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header{
+    padding: 40px 0;
+    background-image: url("../photos/desert.jpg");
+}
+img{
+    display: block;
+}
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-img {
+}
+.headernav {
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.header-item {
+    list-style: none;
+    margin-left: 40px;
+}
+.header-item:nth-child(1) {
+    margin-left: 0px;
+}
+.header-link {
+    font-weight: var(--font700);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333333;
+    text-decoration: none;
+}
+.intro {
+    background-image: url("../photos/desert.jpg");
+}
+/* .img-box{
+    position: relative;
+    left: 500p;
+} */
+.intro-img {
+}
+.intro-parent{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 265px;
+    left: calc(50% - 575px);
+}
+.intro-child {
+    width: 464px;
+}
+.intro-hidden {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #000000;
+}
+.intro-text {
+    margin: 0;
+    margin-bottom: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    mix-blend-mode: normal;
+}
+.intro-link {
+    display: inline-block;
+    padding: 16px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    background: #0A775F;
+    border-radius: 100px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header-box {
+}
+.logo-img {
+}
+.headernav {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+}
+.intro {
+}
+.intro-hidden {
+}
+.intro-text {
+}
+.img-box {
+    position: absolute;
+    top: 0;
+    left: 625px;
+    background-image: url("../photos/drink-coffe.jpg");
+    width: 710px;
+    height: 696px;
+    background-repeat: no-repeat;
+}
+.img-box::before{
+    position: absolute;
+    top: calc(50% - 415px);
+    left: calc(50% - 426px);
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+    background-image: url("../photos/image.svg");
+    background-size: 160px 160px;
+    background-repeat: no-repeat;
+    content: "";
+    
+}
+.intro-img {
+}
+.section-collection {
+    padding: 20px;
+}
+.collection-box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../photos/deserr-white.jpg");
+}
+.collection-hidden {
+    margin: 0;
+    margin-bottom: 80px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    font-variant: small-caps;
+    color: #000000;
+}
+.collection-list {
+    padding: 0;
+    margin: 0;
+}
+.collection-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.collection-item:nth-child(1)::before{
+    position: absolute;
+    top: calc(50% - 290px);
+    left: calc(50% - 910px);
+    background-image: url("../photos/grass1.svg");
+    width: 450px;
+    height: 375px;
+    background-size: 402px 300px;
+    content: "";
+    background-repeat: no-repeat;
+}
+.collection-item:nth-child(2)::after{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - -575px);
+    z-index: 1;
+    background-image: url("../photos/grass2.svg");
+    width: 450px;
+    height: 375px;
+    background-size: 392px 477px;
+    content: "";
+    background-repeat: no-repeat;
+}
+.collection-item:nth-child(3)::after{
+    position: absolute;
+    top: calc(50% - 230px);
+    left: calc(50% - -656px);
+    background-image: url("../photos/grass3.svg");
+    width: 450px;
+    height: 375px;
+    background-size: 253px 215px;
+    content: "";
+    background-repeat: no-repeat;
+}
+.collection-item:nth-child(4)::before{
+    position: absolute;
+    top: calc(50% - 180px);
+    left: calc(50% - 905px);
+    background-image: url("../photos/grass4.svg");
+    width: 450px;
+    height: 375px;
+    background-size: 253px 215px;
+    content: "";
+    background-repeat: no-repeat;
+}
+.collection-img {
+    width: 450px;
+    height: 375px;
+}
+.collection-item__box {
+}
+.collection-item__box{
+    margin-left: 117px;
+    width: 453px;
+}
+.second{
+    width: 390px;
+}
+.thirst{
+    width: 390px;
+}
+.first{
+    margin-right: 97px;
+    width: 410px;
+}
+.collection-item__hidden {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: var(--font500);
+    font-size: 48px;
+    line-height: 56px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    color: #333333;
+}
+.collection-item__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    color: #333333;
+}
