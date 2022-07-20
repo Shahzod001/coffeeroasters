@@ -1,4 +1,4 @@
-var elOpenBtn = document.querySelector(".header-btn");
+var elOpenBtn = document.querySelector(".create-link");
 var elModal = document.querySelector(".modal-box");
 var elCloseModalBtn = document.querySelector(".modal-box");
 var elOver = document.querySelector("body");
