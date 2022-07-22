@@ -1,0 +1,380 @@
+:root {
+    --font-wight-normal: 500;
+    --font-weight-bold: 700;
+    --btn-border-radius: 100px;
+    --main-text-color: #333333;
+    --text-color-black: #000;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    font-weight: 400;
+    src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+        url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    font-weight: 500;
+    src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2"),
+        url("../fonts/roboto-v30-latin-500.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    font-weight: 700;
+    src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"),
+        url("../fonts/roboto-v30-latin-700.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.site-header {
+    padding: 40px 0;
+    background-image: url("../photos/desert.jpg");
+}
+
+
+.site-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sitenav-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.sitenav-link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333333;
+    text-decoration: none;
+}
+
+.sitenav-item:nth-child(2) {
+    margin: 0 40px;
+}
+
+.create-plan {
+    display: inline-block;
+    padding: 16px 24px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 100px;
+}
+.hero {
+    padding-left: 100px;
+    background-image: url("../photos/desert.jpg");
+}
+
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-info-wrapper {
+    width: 465px;
+}
+
+.hero-title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.hero-desc {
+    margin-bottom: 34px;
+    line-height: 24px;
+}
+
+.hero-link {
+    background-color: #0A775F;
+}
+
+
+.hero-img-box {
+    position: relative;
+    z-index: 1;
+    right: -5%;
+}
+
+.hero-img-box::before {
+    position: absolute;
+    top: -9%;
+    left: -10%;
+    z-index: 2;
+    width: 160px;
+    height: 160px;
+    background-image: url("../photos/image.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* transform: translate(-43% , -38%); */
+    content: "";
+}
+.footer-wrap {
+    background-image: url("../photos/desert.jpg");
+    padding: 63px 0px;
+}
+
+.footer-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.footer-item-link {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.footer-link-wrap {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-link-item:not(:last-child) {
+    margin-right: 30px;
+}
+.about-us-text-wrap {
+    width: 372px;
+}
+.commitment {
+    margin: 20px 20px 160px 20px;
+    background-image: url("../photos/deserr-white.jpg");
+    padding: 160px 0px 200px 0px;
+}
+
+.commitment-wrap {
+    position: relative;
+    background-image: url("../photos/cup-green.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 330px);
+}
+
+.commitment-wrap::before {
+    position: absolute;
+    top: -100px;
+    left: -220px;
+    width: 402px;
+    height: 300px;
+    background-image: url("../photos/grass1.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.commitment-text-wrap {
+    width: 626px;
+    margin-left: auto;
+}
+
+.commitment-title {
+    margin: 0;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.commitment-text {
+    font-size: 18px;
+    color: var(--main-text-color);
+    line-height: 30px;
+}
+.quality {
+    margin: 20px;
+    background-image: url("../photos/desert-footer.jpg");
+}
+
+.quality-wrap {
+    position: relative;
+    display: flex;
+    padding: 100px 0px 118px 0px;
+}
+
+.quality-wrap::after {
+    position: absolute;
+    top: -80px;
+    right: -120px;
+    width: 550px;
+    height: 500px;
+    background-image: url("../photos/sell.jpg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.quality-text-wrap {
+    width: 639px;
+    margin-left: 120px;
+}
+
+.quality-title-wrap {
+    width: 397px;
+}
+
+.quality-title {
+    margin: 0;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff;
+    line-height: 59px;
+}
+
+.quality-text {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    opacity: 0.8;
+}
+.headquarters {
+    margin: 20px 20px 50px 20px;
+    padding: 50px 0px 100px 0px;
+    background-image: url("../photos/desert-green.jpg");
+}
+
+.headquarters-title {
+    margin: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    line-height: 59px;
+    text-transform: uppercase;
+}
+
+.headquarters-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.headquarters-item {
+    position: relative;
+    width: 433px;
+    margin-right: 20px;
+    padding: 140px 50px 40px 20px;
+    background-color: #F8F8F2;
+}
+
+.headquarters-item:not(:first-child) {
+    padding-top: 187px;
+}
+
+.headquarters-item::before {
+    position: absolute;
+    top: 45px;
+    right: 55px;
+    width: 120px;
+    height: 143px;
+    background-image: url("../photos-page-3/Combined\ Shape\ \(1\)\ \(1\).svg");
+    background-repeat: no-repeat;
+    margin-bottom: 45px;
+    content: "";
+}
+
+.headquarters-item:nth-child(2)::before {
+    height: 120px;
+    background-image: url("../photos-page-3/Combined\ Shape\ \(2\)\ \(1\).svg");
+}
+
+.headquarters-item:last-child::before {
+    height: 107px;
+    background-image: url("../photos-page-3/Combined\ Shape\ \(3\).svg");
+}
+
+.headquarters-item:last-child {
+    margin-right: 0;
+}
+
+.headquarters-item-title-wrap {
+    width: 230px;
+}
+
+.headquarters-item-title {
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.headquarters-text-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.headquarters-text-item {
+    color: var(--main-text-color);
+    line-height: 28px;
+}
+
+.headquarters-phone-link {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
